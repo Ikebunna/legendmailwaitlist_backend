@@ -19,7 +19,7 @@ export const signUp = async (req, res) => {
             data: {
                 full_name: value.full_name,
                 email: value.email,
-                phone_number: value.phone_number,
+                phone_number: value.phone_number || null,
                 interest: value.interest,
             },
         });
