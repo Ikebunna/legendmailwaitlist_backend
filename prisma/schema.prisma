@@ -14,10 +14,10 @@ datasource db {
 }
 
 model User {
-   id                    Int                        @id @default(autoincrement())
+  id                     Int                        @id @default(autoincrement())
   full_name              String
   email                  String                     @unique
-  phone_number           String
+  phone_number           String?
   interest               String
   created_at             DateTime                   @default(now())
 }
